@@ -18,11 +18,10 @@ tasks = [
     }
 ]
 
-@app.route("/")
-def home():
-    return jsonify({'tasks': tasks})
-
 # @app.route("/")
-# def hello():
-#     data = request.get_json()
-#     return "Olá, moneynow ! "
+# def home():
+#     return jsonify({'tasks': tasks})
+
+@app.route("/")
+def hello():
+    return "Olá, moneynow ! "
