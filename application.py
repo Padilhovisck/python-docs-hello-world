@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 app = Flask(__name__)
 
 import test
@@ -24,4 +24,5 @@ tasks = [
 
 @app.route("/")
 def hello():
-    return "Olá, moneynow ! "
+    return jsonify({'tasks': tasks})
+#     return "Olá, moneynow ! "
