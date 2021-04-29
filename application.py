@@ -18,7 +18,7 @@ tasks = [
     }
 ]
 
-@app.route('/', methods=['GET'])
+@app.route("/")
 def home():
     return jsonify({'tasks': tasks})
 
