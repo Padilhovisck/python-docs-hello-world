@@ -18,8 +18,8 @@ tasks = [
     }
 ]
 
-@app.route('/todo/api/v1.0/tasks', methods=['GET'])
-def get_tasks():
+@app.route('/lista', methods=['GET'])
+def home():
     return jsonify({'tasks': tasks})
 
 # @app.route("/")
